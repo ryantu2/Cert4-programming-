@@ -8,12 +8,17 @@ public class PlayerManager : MonoBehaviour {
     public new string name;  // using 'new string' because 'name' is sorta reserved/already there
     public float maxHp, curHp;
     public DelayedHealth.Health health;
+    public CheckPoint checkPoint;
+    public float x, y, z;
 
     public void SavePlayer()
     {
 
         maxHp = health.maxHealth;
         curHp = health.CurrentHealth;
+        x = checkPoint.curCheckPoint.x;
+        y = checkPoint.curCheckPoint.y;
+        z = checkPoint.curCheckPoint.z;
         Save.SavePlayerData(this);
     }
 
@@ -24,6 +29,10 @@ public class PlayerManager : MonoBehaviour {
         level = data.level;
         maxHp = data.maxHp;
         curHp = data.curHp;
+        x = data.x;
+        y= data.y;
+        z= data.z;
+        this.transform.position = new Vector3(x, y, z);
 
     }
 }
