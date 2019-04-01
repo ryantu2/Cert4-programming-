@@ -364,7 +364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &318016409
 RectTransform:
   m_ObjectHideFlags: 0
@@ -857,6 +857,7 @@ GameObject:
   - component: {fileID: 592432012}
   - component: {fileID: 592432011}
   - component: {fileID: 592432010}
+  - component: {fileID: 592432014}
   m_Layer: 0
   m_Name: NPC
   m_TagString: NPC
@@ -932,6 +933,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &592432014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592432009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b72ec2a81391584a88daa9b44051775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDlg: 0
+  grid: 0
+  scr: {x: 0, y: 0}
+  dlgText:
+  - hi
+  - 1
+  - 2
+  - 3
+  - bye
+  index: 0
+  optionsIndex: 0
 --- !u!1 &599210260
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,7 +2139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1714312068
 RectTransform:
   m_ObjectHideFlags: 0
